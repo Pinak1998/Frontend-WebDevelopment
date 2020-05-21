@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<style>	
+#shad{
+opacity:0.6;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+</style>
+<script>
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+  
+}
+function mouseOut() {
+  
+  document.getElementById("demo").style.color = "blue"
+}</script>
+
+<ul>
+<li>
+ <a href="Home.html" > Home </a> </li>
+<li><a href ="Signup.html">Sign up </a></li>
+<li><a href="Login.html"  class="active">Log in </a></li>
+<li><a href="Contact.html">Contact Us </a></li>
+<li><a href="AboutUs.html" >About Us </a></li>
+</ul>
+<center> <h1 style="color:purple"> Welcome Back!</h1> </center>
+</head>
+<br><br>
+<center> <img  src="Image4.jpg" width="560" height="330" > 
+<body style="background-image:linear-gradient(red,#ff8000)">
+
+<br>
+<form>
+
+
+<br><br>Email:<br>
+<input type="email" placeholder="Enter email" name="Email" required>
+
+<br><br>Password:<br>
+   <input type="password" placeholder="Enter password" size="20" name="pswd" min="7" max="15" required>
+
+
+
+
+
+
+<br><br>
+<input type="submit" value="Login" class="button button1"  onmouseover="mouseOver()" onmouseout="mouseOut()" id="demo">
+<br><br><br><br><br><br><br><br>
+
+
+
+</form> 
+
+
+
+</body> </center>
+</html>

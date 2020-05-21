@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Tours and Travels</title>
+<header>
+
+<ul>
+<li>
+ <a href="" class="active"> Home </a> </li>
+<li><a href ="signup.html">Sign up </a></li>
+<li><a href="Login.html">Log in </a></li>
+<li><a href="Contact.html">Contact Us </a></li>
+<li><a href="AboutUs.html">About Us </a></li>
+</ul>
+<center> <h1 style="color:purple">Delight Tours & Travels</h1> </center>
+</header>
+<br>
+<center> <img  src="tours.jpg" width="460" height="230" > </center><br>
+<marquee style="background:yellow;"> Kindly sign up if you are not yet registered .Great offers available! .For any queries please feel free to contact us . </marquee> <br>
+<style>
+.active {
+  background-color: #4CAF50;
+}
+#box {
+text-align:center;
+border:5px solid;
+padding:10px;
+width:120px;
+box-shadow:6px 6px red;
+background-color:yellow;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+</style>
+<script>
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+  
+}
+function mouseOver1() {
+  
+  document.getElementById("demo1").style.color = "red";
+}
+
+function mouseOut() {
+  
+  document.getElementById("demo").style.color = "blue"
+}
+function mouseOut1() {
+  
+  document.getElementById("demo1").style.color = "blue"
+}
+</script>
+
+ </head>
+<body style="background-image:linear-gradient(red,#ff8000)">
+<article>
+
+<hr> 
+<br>
+<center>
+
+
+<strong style="color:blue">Hello and Welcome.Get ready to explore!</strong><br><br>
+<h2 style="color:purple">Our Tours</h2><br>
+<div id=box>
+ <a href="Indian.html" class="button button1"style="color:blue" id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Indian Tours  </a><br><br>
+<a href="International.html" class="button button1"style="color:blue" id="demo1" onmouseover="mouseOver1()" onmouseout="mouseOut1()">International Tours  </a> <br><br>
+
+   <br></center>
+ </div>
+  
+
+</article>
+</body>
+
+</html>

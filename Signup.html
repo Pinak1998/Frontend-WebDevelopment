@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	
+
+.active {
+  background-color: #4CAF50;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 12px;}
+</style>
+
+
+
+<script>
+function check_password(){
+var pswd =document.myForm.pswd.value;
+var reg=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+if(!reg.test(pswd)){
+   alert(" Password must have Minimum eight characters, at least one letter and one number.Please enter again! ");
+   document.myForm.pswd.focus();
+   return false;
+   }
+}
+ function check_Alpha1(letters1){
+    var reg1 = /^[a-zA-Z]+$/;
+    if(reg1.test(letters1.Fname.value) == false){
+   alert("Name must be in alphabets only");
+   letters1.Fname.focus();
+   return false;
+    }}
+	 function check_Alpha2(letters2){
+    var reg2= /^[a-zA-Z]+$/;
+    if(reg2.test(letters2.Lname.value) == false){
+   alert("Name must be in alphabets only");
+   letters2.Lname.focus();
+   return false;
+    }
+
+}
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(mailformat.test(inputText.Email.value) == false){
+   alert("You have entered an invalid email.");
+   inputText.Email.focus();
+   return false;
+    }
+}
+
+function validateForm() {
+  var x = document.myForm.Fname.value;
+  if (x == "") {
+    alert("First Name must be filled out");
+    return false;
+  }
+      
+ 
+  var y = document.forms["myForm"]["Lname"].value;
+  if (y == "") {
+    alert("Last Name must be filled out");
+    return false;
+	}
+	var z = document.forms["myForm"]["Email"].value;
+  if (z == "") {
+    alert("Email must be filled out");
+    return false;
+	}
+	var a = document.forms["myForm"]["pswd"].value;
+  if (a == "") {
+    alert("Password must be filled out");
+    return false;
+	}
+	var b = document.forms["myForm"]["cpswd"].value;
+  if (b == "") {
+    alert("This must be filled out");
+    return false;
+	}
+	if (a!=b)
+	{
+	alert("The passwords are not matching . Please enter again!");
+	return false;
+	}
+	  var c = document.forms["myForm"]["mobile"].value;
+  if (c == "") {
+    alert("Phone no must be filled out");
+    return false;
+	}
+	
+	
+	}
+	function Validation()
+{
+var d = document.myForm.mobile.value;
+
+if(isNaN(d))
+{
+alert("Enter valid Mobile Number");
+document.myForm.mobile.focus();
+return false;
+}
+
+	
+}
+function showInput() {
+  
+
+		var myWindow = window.open("", "Newwin",'toolbar=no,status=no,width=300,height=300');	
+		myWindow.document.write("Your Details:"+"<br>");
+        myWindow.document.write("First Name: "+myForm.Fname.value+"<br>");	
+		myWindow.document.write("Last Name: "+myForm.Lname.value+"<br>");
+		myWindow.document.write("Email id: "+myForm.Email.value+"<br>");
+        myWindow.document.write("Date of Birth: "+myForm.bday.value+"<br>");
+        myWindow.document.write("Mobile Number: "+myForm.mobile.value+"<br>");
+					
+    }
+	function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+  
+}
+function mouseOut() {
+  
+  document.getElementById("demo").style.color = "blue"
+}
+	/*function namef(){
+alert("Name must contain alphabets only");
+}
+function passf(){
+alert("Password must be minimum 8 characters , at least one letter and one number:");
+}*/
+
+function pageload()
+		{
+			alert(" Page Loaded Successfully")
+		}
+	
+</script>
+</head>
+
+<body onload="pageload()" style="background-image:linear-gradient(red,#ff8000)" >
+<ul>
+<li>
+ <a href="Home.html" > Home </a> </li>
+<li><a href ="" class="active">Sign up </a></li>
+<li><a href="Login.html">Log in </a></li>
+<li><a href="Contact.html">Contact Us </a></li>
+<li><a href="AboutUs.html" >About Us </a></li>
+</ul>
+
+<center>
+
+<h1 style="color:purple"> Welcome!</h1> </center>
+<br>
+
+<center> <img  src="Image5.jpg" width="560px" height="330px" > </center>
+
+
+<br>
+<center>
+<form name="myForm"  onsubmit="validateForm(),check_Alpha1(this),check_Alpha2(this),Validation(),check_password(),ValidateEmail(this),showInput()" >
+<div onmouseover="namef()" >
+First Name:<br>
+<input  placeholder="Enter First name"   name="Fname" id="user_input1"></div>
+<br>Last Name:<br>
+<input  placeholder="Enter Last name" name="Lname" id="user_input2" >
+<br><br>Email:<br>
+<input  placeholder="Enter email" name="Email" id="user_input3"><br>
+<div onmouseover="passf()">
+<br>
+Password:<br>
+
+
+   <input type="password" placeholder="Enter Password. "  name="pswd"  >
+</div>
+<br>Confirm Password:<br>
+   <input type="password" placeholder="Enter the password again"  name="cpswd"  >
+
+
+<br><br>Date Of Birth:<br>
+<input type="date" name="bday" id="user_input4">
+
+<br><br>Mobile Number:<br>
+ <input type="text" placeholder="Enter Mobile Number" name="mobile" id="user_input5">
+
+<br><br>
+<input type="submit" class="button button1" value="SignUp" onmouseover="mouseOver()" onmouseout="mouseOut()" id="demo"> 
+</form>
+
+<br>
+<p id="innerHTM" onclick="myFunction()">End of the form</p>
+	 </form>
+     
+    
+     <script type="text/javascript">
+        
+  function myFunction() {
+  document.getElementById("innerHTM").innerHTML = "Thank You . Keep Visiting us.";
+  
+}  
+
+</script>
+
+</body> 
+</html>

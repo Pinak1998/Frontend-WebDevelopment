@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="libraryrecord.xsl"?>
+<catalog>
+  <cd>
+    <title>The Da Vinci Code</title>
+    <author> Dan Brown</author>   
+    <publisher>Bantam Books </publisher>
+    <price>21.59</price>
+    <year>2003</year>
+  </cd>
+  <cd>
+    <title>Pride and Prejudice</title>
+    <author>Jane Austen</author>
+    <publisher>Modern Library</publisher>
+    <price>10.85</price>
+    <year>2000</year>
+  </cd>
+  <cd>
+    <title>The Diary of a Young Girl</title>
+    <author>Anne Frank</author>
+    <publisher>Bantam</publisher>
+    <price>32.56</price>
+    <year>1993</year>
+  </cd>
+  <cd>
+    <title> An Artist of the Floating World</title>
+    <author>Kazuo Ishiguro </author>
+    <publisher>Mass Market Paperback</publisher>
+    <price>19</price>
+    <year>1986</year>
+  </cd>
+    <cd>
+    <title>The Lord of the Rings</title>
+    <author>J.R.R. Tolkien</author>
+    <publisher>Houghton Mifflin Harcourt</publisher>
+    <price>26.0</price>
+    <year>1995</year>
+  </cd>
+    <cd>
+    <title>The Hobbit or There and Back Again</title>
+    <author>J.R.R. Tolkien</author>
+    <publisher>Houghton Mifflin</publisher>
+    <price>18.56</price>
+    <year>2002</year>
+  </cd>
+    <cd>
+    <title>Charlotte's Web</title>
+    <author>E.B. White</author>
+    <publisher>HarperCollins</publisher>
+    <price>19.4</price>
+    <year>2001</year>
+  </cd>
+    <cd>
+    <title>The Deathly Hallows</title>
+    <author>J. K. Rowling</author>
+    <publisher>	Bloomsbury Publishing</publisher>
+    <price>10.32</price>
+    <year>2007</year>
+  </cd>
+  
+
+</catalog>

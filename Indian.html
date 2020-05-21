@@ -1,0 +1,305 @@
+<!Doctype Html>
+<html>
+<head>
+<ul>
+<li>
+ <a href="home.html" > Home </a> </li>
+<li><a href="" class="active"> Indian Tours </a> </li>
+<li>
+ <a href="International.html" > International Tours </a> </li>
+</ul>
+<style>
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 220px;
+  color:yellow;
+  font-size: 30px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color:yellow;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+#box {
+text-align:center;
+border:5px solid;
+padding:10px;
+width:120px;
+box-shadow:6px 6px red;
+background-color:yellow;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  padding: 10px
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+position: relative;
+  text-align: center;
+  color: white;
+  flex: 33.33%;
+  padding: 5px;
+}
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  background-color: blue;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body style="background-image:linear-gradient(red,#ff8000)" >
+<h1 style="color:purple">Indian Tours</h1>
+<div class="row">
+  <div class="column">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+
+  
+    <img src="Andaman.jpg"  width="400" height="400">
+	
+	 <div class="bottom-right">Andaman</div>
+  </div>
+  
+  <div class="flip-box-back">
+      <h2>Andaman</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>Port Blair , Netaji Subhas Chandra Bose Dweep(Ross), Swaraj Dweep (Havelock) , Jolly Buoy.</h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+
+    <img src="Andhra.jpg"  width="400" height="400">
+	<div class="bottom-right">   Andhra Pradesh</div>
+  </div>
+  <div class="flip-box-back">
+      <h2>Andhra Pradesh</h2>
+	 <h3> Tour Higlights</h3><br>
+      <h3>Hyderabad , Srisailam , Tirupati , Kanchipuram , Mahabalipuram.</h3>
+	  
+</div></div></div>
+	  </div>
+    
+  
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Gujarat.jpg"  width="400" height="400">
+	<div class="bottom-right">Gujarat</div></div>
+ <div class="flip-box-back">
+      <h2>Gujarat</h2>
+	   <h3> Tour Highlights</h3><br>
+       <h3> Dwarka  , Somnath  , Junagarh , Bhavnagar , Vadodara , Statue Of Unity, Ahmeddabad  </h3>
+	  </div>
+	  
+    
+  </div>
+</div></div></div>
+<div class="row">
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Kashmir.jpg"  width="400" height="400">
+	<div class="bottom-right">Kashmir</div>
+  </div>
+  <div class="flip-box-back">
+      <h2>Kashmir</h2>
+	   <h3> Tour Highlights</h3><br>
+      <h3>Srinagar , Sonamarg, Gulmarg, Khilanmarg (Affarwat), Pahalgam , Chandanwari, Katra , Vaishnodevi</h3>
+	  </div>
+	  
+    
+  </div>
+</div></div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Kerala.jpg"  width="400" height="400">
+	<div class="bottom-right">Kerala</div>
+  </div>
+  <div class="flip-box-back">
+      <h2>Kerala</h2>
+	  <h3> Tour Highlights</h3><br>
+     <h3> Kochi , Munnar , Periyar , Kumarakom , Trivandrum, Kovalam ,</h3>
+	  </div>  
+  </div>
+</div></div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Ladakh.jpg"  width="400" height="400">
+	<div class="bottom-right">Ladakh</div>
+  </div>
+  <div class="flip-box-back">
+      <h2>Ladakh</h2>
+      <h3> Tour Highlights</h3><br>
+     <h3> Leh , Pangong Tso, Khardung la Pass, Nubra Valley , Diskit , Likir, Alchi, Kargil , Lamayaru.</h3>
+	  </div>  
+  </div>
+</div></div>
+</div>
+<div class="row">
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Himachal.jpg"  width="400" height="400">
+	<div class="bottom-right">Himachal </div>
+  </div>
+  <div class="flip-box-back">
+      <h2>Himachal Pradesh</h2>
+     <h3> Tour Higlights</h3><br>
+     <h3>Shimla , Kufri, Kullu, Manali , Rohtang Snow Point, Dharamshala , Dalhousie .</h3>
+	  </div>  
+  </div>
+</div></div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+  <div class="flip-box-front">
+    <img src="North-East.jpg"  width="400" height="400">
+	<div class="bottom-right">North-East</div>
+  </div>
+  <div class="flip-box-back">
+      <h2>North-East</h2>
+      <h3> Tour Higlights</h3><br>
+	  <h3>Meghalaya: Shillong , Cherrapunji, Mawlynong village,<br> Arunachal Pradesh: Dirang , Bomdilla , Tawang .<br> Assam: Tezpur , Kaziranga ,Guwahati .</h3>
+	  </div>  
+  </div>
+</div></div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+  <div class="flip-box-front">
+    <img src="rajasthan.jpg"  width="400" height="400">
+	<div class="bottom-right">Rajasthan</div>
+  </div>
+  <div class="flip-box-back">
+      <h2>Rajasthan</h2>
+    <h3> Tour Higlights</h3><br>
+	<h3>Mt. Abu , Udaipur , Chittorgarh, Ajmer / Pushkar , Ranthambore , Jaipur , Bikaner , Jaisalmer , Jodhpur .</h3>
+	  </div>  
+  </div>
+</div></div></div>
+
+<div class="row">
+  <div class="column">
+    <div class="flip-box">
+  <div class="flip-box-inner">
+  <div class="flip-box-front">
+    <img src="Sikkim.jpg"  width="400" height="400">
+	<div class="bottom-right">Sikkim</div>
+  </div>
+    <div class="flip-box-back">
+      <h2>Sikkim</h2>
+<h3> Tour Higlights</h3><br>
+<h3>Pelling , Gangtok </h3>
+	  </div>  
+  </div>
+</div></div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+  <div class="flip-box-front">
+    <img src="Tamil-Nadu.jpg"  width="400" height="400">
+	<div class="bottom-right">Tamil Nadu</div>
+  </div>
+  <div class="flip-box-back">
+      <h2>Tamil Nadu</h2>
+     <h3> Tour Higlights</h3><br>
+	 <h3> Ooty , Kodaikanal  .</h3>
+	  </div>  
+  </div>
+</div></div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+  <div class="flip-box-front">
+    <img src="Maharashtra.jpg"  width="400" height="400">
+	<div class="bottom-right">Maharashtra</div>
+  </div>
+  <div class="flip-box-back">
+      <h2>Maharashtra</h2>
+   <h3> Tour Higlights</h3><br>
+   <h3> Anandwan , Hemalkasa , Somnath  & Tadoba </h3>
+	  </div>  
+	  </div>  
+  </div>
+</div></div></div>
+  
+</div>
+</body>
+</html>

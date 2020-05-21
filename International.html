@@ -1,0 +1,304 @@
+<!Doctype Html>
+<html>
+<head>
+<ul>
+<li>
+ <a href="home.html" > Home </a> </li>
+<li><a href="Indian.html" > Indian Tours </a> </li>
+<li>
+ <a href="" class="active"> International Tours </a> </li>
+</ul>
+<style>
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 220px;
+  color:red;
+  font-size: 30px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color:yellow;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+#box {
+text-align:center;
+border:5px solid;
+padding:10px;
+width:120px;
+box-shadow:6px 6px red;
+background-color:yellow;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  padding: 10px
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+position: relative;
+  text-align: center;
+  color: white;
+  flex: 33.33%;
+  padding: 5px;
+}
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  background-color: blue;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body style="background-image:linear-gradient(red,#ff8000)" >
+<h1 style="color:purple">International Tours</h1>
+<div class="row">
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="America.jpg"  width="400" height="400">
+	 <div class="bottom-right">America</div>
+  </div> <div class="flip-box-back">
+      <h2>America</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>Chicago , Niagara Falls ,<br> Canada: Niagara Falls, <br>America: New York , Washington: , Orlando: , Bahamas Royal Caribbean Cruise: , Las Vegas: , Los Angeles: , San Francisco / San Jose: </h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Australia-NewZealand.jpg"  width="400" height="400">
+	<div class="bottom-right">Australia</div>
+  </div><div class="flip-box-back">
+      <h2>Australia</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>Australia: Melbourne, Cairns , Gold Coast  ,Sydney , Blue Mountains <br>New Zealand: Rotorua ,Auckland , Christchurch , Queenstown </h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="BHUTAN.jpg"  width="400" height="400">
+	<div class="bottom-right">Bhutan</div>
+  </div><div class="flip-box-back">
+      <h2>Bhutan</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>Thimphu , Punakha , Paro .</h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Dubai.jpg"  width="400" height="400">
+	<div class="bottom-right">Dubai</div>
+  </div><div class="flip-box-back">
+      <h2>Dubai</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>UAE: Dubai , Abu Dhabi .</h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Europe.jpg"  width="400" height="400">
+	<div class="bottom-right">Europe</div>
+  </div><div class="flip-box-back">
+      <h2>Europe</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>Spain: Madrid , Barcelona ,<br> France: Cannes, Nice , Eze, Paris , Monaco: Monte Carlo, <br>Italy: Pisa, Florence, Arezzo , Rome , Modena, Padova , Venice, <br>Vatican: Vatican City, <br>Austria: Innsbruck , Wattens,<br> Germany: Munich, <br>Liechtenstein: Vaduz, <br>Switzerland: Schaffhausen, Zurich, Lucerne , Engelberg, Lauterbrunnen, Jungfraujoch, Interlaken, <br> Netherlands (Holland): Rotterdam , Den Hague, Amsterdam, <br> Belgium: Brussels ,<br> England: London , Windsor.</h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Japan-China.jpg"  width="400" height="400">
+	<div class="bottom-right">Japan China</div>
+  </div><div class="flip-box-back">
+      <h2>Japan China</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>China: Beijing , Xian , Guilin , Shanghai 3N, <br> Japan: Osaka , Nara, Kyoto, Hiroshima , Hakone, Tokyo .</h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="SouthAfrica.jpg"  width="400" height="400">
+	<div class="bottom-right">South Africa</div>
+  </div><div class="flip-box-back">
+      <h2>South Africa</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>Cape Town , Kirstenbosch, Stellenbosch, Hermanus , Mossel Bay , Oudtshoorn, Johannesburg , Gold Reef City</h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="SouthEastAsia.jpg"  width="400" height="400">
+	<div class="bottom-right">SouthEastAsia</div>
+  </div><div class="flip-box-back">
+      <h2>SouthEastAsia</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>Hong Kong: Hong Kong , Disneyland,<br> Macau: Macau, <br>Malaysia: Genting Highlands , Kuala Lumpur , Sunway City, Putrajaya, <br>Singapore: Singapore , Thailand: Pattaya , Bangkok .</h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Mauritius.jpg"  width="400" height="400">
+	<div class="bottom-right">Mauritius</div>
+  </div><div class="flip-box-back">
+      <h2>Mauritius</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>Mauritius , Ile Aux Cerfs, Trou Aux Cerfs, Curepipe, Grand Bassin</h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Nepal.jpg"  width="400" height="400">
+	<div class="bottom-right">Nepal</div>
+  </div><div class="flip-box-back">
+      <h2>Nepal</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3> Kathmandu , Chitwan , Pokhra .</h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="Seychelles.jpg"  width="400" height="400">
+	<div class="bottom-right">Seychelles</div>
+  </div><div class="flip-box-back">
+      <h2>Seychelles</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>Mahe , Praslin , La Digue.</h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+  <div class="column">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+    <img src="SriLanka.jpg"  width="400" height="400">
+	<div class="bottom-right">SriLanka</div>
+  </div>
+  <div class="flip-box-back">
+      <h2>Sri Lanka</h2>
+	<h3> Tour Higlights</h3><br>
+      <h3>Colombo , Pinnawala, Dambulla , Sigiriya, Matale, Kandy , Peradeniya, Nuwara Eliya , Hakgala, Kelaniya </h3>
+	  </div>
+	  </div>
+    
+  </div>
+</div>
+</div>
+</body>
+</html>
